@@ -9,7 +9,7 @@ Snorking
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 Passed back into trainer + the current trainer's id, which redirects to the page before clicking the damage button.
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
-
+It flashes an error when we redirect back to the form after we can't add a pokemon.
 # Give us feedback on the project and decal below!
-
+Question 5 took the longest by far.
 # Extra credit: Link your Heroku deployed app
