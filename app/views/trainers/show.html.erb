@@ -1,6 +1,11 @@
 <h3>Trainer</h3>
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
+
+<% if @trainer.id==current_trainer.id %>
+	<td><%= button_to "New Pokemon!",new_path(), :class => "button medium", :method => :get %></td>
+<% end%>
+
 <p>Trainer's Pokemon:</p>
 <table>                         
   <tr>                          
