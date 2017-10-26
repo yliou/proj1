@@ -1,3 +1,15 @@
 <h3>Trainer</h3>
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
+<p>Trainer's Pokemon:</p>
+<table>                         
+  <tr>                          
+    <th>Name</th><th>Level</th>
+  </tr>
+<% @trainer.pokemon.each do |data| %>       
+  <tr>
+    <td><%= data.name %> </td>  <td><%= data.level %> </td>  
+  </tr>
+<% end %>                        
+</table> 
+
