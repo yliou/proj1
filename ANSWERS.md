@@ -7,7 +7,7 @@ When the button is passed, the pokemon is passed to the pokemon controller so th
 # Question 3: What would you name your own Pokemon?
 Snorking
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
-
+Passed back into trainer + the current trainer's id, which redirects to the page before clicking the damage button.
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
 # Give us feedback on the project and decal below!
